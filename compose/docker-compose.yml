@@ -6,3 +6,5 @@ services:
     image: dheerajdevops123/catalogue:151
   frontend:
       image: dheerajdevops123/frontend:152
+      ports:
+        - "80:80"
