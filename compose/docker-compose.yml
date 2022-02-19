@@ -8,3 +8,5 @@ services:
       image: dheerajdevops123/frontend:152
       ports:
         - "80:80"
+  mongodb:
+    image: dheerajdevops123/mongodb:153
