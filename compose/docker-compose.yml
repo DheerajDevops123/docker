@@ -3,6 +3,12 @@ services:
   cart:
     container_name: cart
     image: dheerajdevops123/cart:150
+    environment:
+      REDIS_HOST: redis
+      CATALOG_HOST: catalogue
+    depends_on:
+      - catalogue
+      - redis
   catalogue:
     container_name: catalogue
     image: dheerajdevops123/catalogue:151
@@ -31,5 +37,6 @@ services:
       REDIS_HOST: "redis"
     depends_on:
       - mongodb
+      - redis
 
 
