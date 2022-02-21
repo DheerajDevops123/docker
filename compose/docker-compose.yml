@@ -32,6 +32,8 @@ services:
   mysql:
     container_name: mysql
     image: dheerajdevops123/mysql:161
+    environment:
+      MYSQL_ROOT_PASSWORD: "root123"
   user:
     container_name: user
     image: dheerajdevops123/user:158
