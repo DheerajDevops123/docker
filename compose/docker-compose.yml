@@ -12,7 +12,7 @@ services:
       - mongodb
   frontend:
     container_name: frontend
-    image: dheerajdevops123/frontend:156
+    image: dheerajdevops123/frontend:157
     ports:
         - "80:80"
     depends_on:
