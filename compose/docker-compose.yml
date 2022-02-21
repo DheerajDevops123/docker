@@ -45,7 +45,7 @@ services:
       - redis
   shipping:
     container_name: shipping
-    image: dheerajdevops123/shipping:163
+    image: dheerajdevops123/shipping:164
     environment:
       CART_ENDPOINT: "cart:8080"
       DB_HOST: "mysql"
