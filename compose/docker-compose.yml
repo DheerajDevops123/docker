@@ -20,4 +20,16 @@ services:
   mongodb:
     container_name: mongodb
     image: dheerajdevops123/mongodb:153
+  redis:
+    container_name: redis
+    image: redis
+  user:
+    container_name: user
+    image: dheerajdevops123/user:158
+    environment:
+      MONGO_URL: "mongodb://mongodb:27017/users"
+      REDIS_HOST: "redis"
+    depends_on:
+      - mongodb
+
 
