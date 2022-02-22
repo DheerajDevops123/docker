@@ -31,7 +31,7 @@ services:
     image: redis
   mysql:
     container_name: mysql
-    image: dheerajdevops123/mysql:161
+    image: dheerajdevops123/mysql:165
     environment:
       MYSQL_ROOT_PASSWORD: "root123"
   user:
