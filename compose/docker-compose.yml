@@ -18,7 +18,7 @@ services:
       - mongodb
   frontend:
     container_name: frontend
-    image: dheerajdevops123/frontend:160
+    image: dheerajdevops123/frontend:166
     ports:
         - "80:80"
     depends_on:
@@ -43,15 +43,15 @@ services:
     depends_on:
       - mongodb
       - redis
-  shipping:
-    container_name: shipping
-    image: dheerajdevops123/shipping:164
-    environment:
-      CART_ENDPOINT: "cart:8080"
-      DB_HOST: "mysql"
-    depends_on:
-      - cart
-      - mysql
+#  shipping:
+#    container_name: shipping
+#    image: dheerajdevops123/shipping:164
+#    environment:
+#      CART_ENDPOINT: "cart:8080"
+#      DB_HOST: "mysql"
+#    depends_on:
+#      - cart
+#      - mysql
 
 
 
