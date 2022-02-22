@@ -23,6 +23,7 @@ services:
         - "80:80"
     depends_on:
       - catalogue
+      - shipping
   mongodb:
     container_name: mongodb
     image: dheerajdevops123/mongodb:153
