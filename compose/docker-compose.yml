@@ -54,12 +54,17 @@ services:
     depends_on:
       - cart
       - mysql
-  payment:
-    container_name: payment
-    image: dheerajdevops123/payment
-    environment:
-      CART_HOST: "8080"
-      USER_HOST: "8080"
+#  payment:
+#    container_name: payment
+#    image: dheerajdevops123/payment
+#    environment:
+#      CART_HOST: cart
+#      USER_HOST: user
+#  rabbitmq:
+#    container_name: rabbitmq
+#    image: rabbitmq
+
+
 
 
 
