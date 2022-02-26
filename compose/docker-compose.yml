@@ -54,6 +54,10 @@ services:
     depends_on:
       - cart
       - mysql
+  payment:
+    container_name: payment
+    image: dheerajdevops123/payment
+
 
 
 
